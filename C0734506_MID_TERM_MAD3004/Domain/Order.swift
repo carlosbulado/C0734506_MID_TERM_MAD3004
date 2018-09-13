@@ -67,7 +67,7 @@ class Order: IDisplay
         {
             retn += "\t" + p.display() + "\n"
         }
-        retn += "Total: \(self.Total)"
+        retn += "Total: $\(self.Total)"
         return retn
     }
 }

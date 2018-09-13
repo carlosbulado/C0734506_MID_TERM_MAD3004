@@ -45,7 +45,7 @@ class Product: Manufacturer
         set { self._quantity = newValue }
     }
     override func display() -> String {
-        return super.display() + " ProductId: \(self.ProductId) \t\t  ProductName: \(self.ProductName) \t\t Price: \(self.Price) \t\t Quantity: \(self.Quantity)"
+        return super.display() + " ProductId: \(self.ProductId) \t\t  ProductName: \(self.ProductName) \t\t Price: $\(self.Price) \t\t Quantity: \(self.Quantity) \t\t Total: $\(self.Price * self.Quantity)"
     }
 }
 
